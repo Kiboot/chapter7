@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">chapter7</string>
+    <string name="helloworld">Hello World!</string>
+    <string-array name="operation">
+        <item id="1"> Multiplication</item>
+        <item id="2"> Division</item>
+        <item id="3"> Addition</item>
+        <item id="4"> Name Display</item>
+    </string-array>
+</resources>
