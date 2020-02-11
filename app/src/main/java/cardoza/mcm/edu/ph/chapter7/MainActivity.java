@@ -22,14 +22,21 @@ public class MainActivity extends AppCompatActivity {
         String txtD1="4", txtD2="2",txtD3="a",answer;
 
         Math mathOp1= new Math(2,4);
-        Math mathOp3= new Math(txtD3,Double.parseDouble(txtD1),Double.parseDouble(txtD2));
+        Math mathOp3= new Math(txtD3,txtD1,txtD2);
+        Math mathOp2= new Math(txtD1,txtD2);
+
 
         txt.setText(mathOp3.a);
         txt.setText(mathOp1.a);
-        //answer = mathOp3.a; //2
-        //answer = mathOp1.a; //6
 
-
-
+        Product titanGelMAX = new Product("Titan Gel MAX","6969","696969");
+        Product femdomlash = new Product("Latigo ni Hudas","666","6666666");
+        titanGelMAX.setName("TT GEL MAX"); //You renamed titan gel max
+        Product secretnilyka = new Product("Nudes ni Malik","999","99999");
+        secretnilyka.setPrice("1500000");
+        femdomlash.setID("6666666"); //increased deebil
+        String pangalansayawa = femdomlash.getName();
+        String product1 = titanGelMAX.getName();
+        
     }
 }
