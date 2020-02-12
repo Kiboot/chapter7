@@ -3,8 +3,14 @@ package cardoza.mcm.edu.ph.chapter7;
 public class Math {
 
     private double firstDouble, secondDouble;
-    int firstInt, secondInt;
-    String a;
+    private int firstInt, secondInt;
+    private String a;
+
+    public String getAnswer(){ //getter method for answer
+        return a;
+    }
+
+
 
     public Math(String d,double e,double f){// 1.b
 

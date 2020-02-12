@@ -26,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
         Math mathOp2= new Math(txtD1,txtD2);
 
 
-        txt.setText(mathOp3.a);
-        txt.setText(mathOp1.a);
+        txt.setText(mathOp3.getAnswer()); //unconventional or borderline illegal
+        txt.setText(mathOp1.getAnswer());
 
         Product titanGelMAX = new Product("Titan Gel MAX","6969","696969");
         Product femdomlash = new Product("Latigo ni Hudas","666","6666666");
