@@ -38,5 +38,7 @@ public class MainActivity extends AppCompatActivity {
         String pangalansayawa = femdomlash.getName();
         String product1 = titanGelMAX.getName();
 
+        Product chippy = new Product("Chippy Light Saled","Parat gihapon kaayo");
+        Product nova = new Product("Nova Chips","Balas balas ug lasa");
     }
 }

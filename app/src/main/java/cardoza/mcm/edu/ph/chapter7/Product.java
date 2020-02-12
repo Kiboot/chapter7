@@ -9,10 +9,22 @@ public class Product {
     private String productName;
     private String productID;
     private String productDesc;
+    private int idgen=20200004;
 
 
 
     private BigDecimal productPrice;
+
+//roduct("Chippy Light Saled","Parat gihapon kaayo")
+    public Product(String name,String productDesc){
+        productName = name; //Chippy , Nova
+        productID = String.valueOf(idgen);
+        idgen++;
+        this.productDesc = productDesc; //parat, balas2x
+
+        // Chippy =0
+        // Nova =1
+    }
 
     public Product(String name, String id, String price) {
         productName = name;
