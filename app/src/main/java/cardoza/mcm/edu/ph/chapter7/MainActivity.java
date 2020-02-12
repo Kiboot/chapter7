@@ -37,6 +37,6 @@ public class MainActivity extends AppCompatActivity {
         femdomlash.setID("6666666"); //increased deebil
         String pangalansayawa = femdomlash.getName();
         String product1 = titanGelMAX.getName();
-        
+
     }
 }

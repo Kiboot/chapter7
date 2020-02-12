@@ -3,22 +3,28 @@ package cardoza.mcm.edu.ph.chapter7;
 import java.math.BigDecimal;
 
 public class Product {
+    private static BigDecimal minPrice = new BigDecimal("0.00");
+    private static BigDecimal maxPrice = new BigDecimal("999.99");
 
-    //("Titan Gel MAX","6969","696969");
-    private String productName; //happy ending ni TT GEL MAX
+    private String productName;
     private String productID;
+    private String productDesc;
+
+
+
     private BigDecimal productPrice;
 
     public Product(String name, String id, String price) {
-        productName = name; //titan gel
-        productID = id; //6969
-        productPrice = new BigDecimal(price); //696969
+        productName = name;
+
+        productID = id;
+        productPrice = new BigDecimal(price);
     }
     public String getName(){
         return this.productName;
     }
     public void setName(String name){
-        this.productName = name; //TT GEL MAX
+        this.productName = name;
     }
     public String getID(){
         return this.productID;
@@ -29,9 +35,18 @@ public class Product {
     public BigDecimal getPrice(){
         return this.productPrice;
     }
-    public void setPrice(String price){
-        this.productPrice = new BigDecimal(price);
+    public void setPrice(String price) throws IllegalArgumentException {
+        BigDecimal tempPrice = new BigDecimal(price);
+        if (!isValidPrice(tempPrice)) {
+            throw new IllegalArgumentException(price);
+        }
+        this.productPrice = tempPrice;
     }
+    public boolean isValidPrice(BigDecimal price){ if (price.compareTo(minPrice)<0){ return false;
+    }
+        if (price.compareTo(maxPrice)>0){ return false;
+        } return true; }
+
     public String displayString() {
         return "Product " +
                 this.getID() +
